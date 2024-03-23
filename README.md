@@ -6,7 +6,7 @@
 
 # Demo :movie_camera:
 
-![](./public/image/screen.png)
+![https://mehedi-portfolio-gamma.vercel.app/](./public/image/screen.png)
 
 ## View live preview [here]().
 
