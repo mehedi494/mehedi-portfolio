@@ -7,24 +7,28 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
-import TopToPageArrow from "./components/homepage/TopToPageArrow";
-
-
 
 export default async function Home() {
- 
-
   return (
     <>
-      <HeroSection />
+      {/*  <HeroSection />
       <AboutSection />
       <Experience />
       <Skills />
       <Projects />
       <Education />
-      <Blog  />
+      <Blog />
+      <ContactSection /> */}
+
+      <HeroSection />
+      <Skills />
+      <Projects />
+      <Blog />
+      <Experience />
+      <Education />
+     
+      <AboutSection />
       <ContactSection />
-      <TopToPageArrow />
     </>
   );
 }
