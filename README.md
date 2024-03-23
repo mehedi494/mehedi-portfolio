@@ -4,9 +4,9 @@
 
 ---
 
-##LIVE
+## LIVE
 
-![https://mehedi-portfolio-gamma.vercel.app/](./public/image/screen.png)
+![https://mehedi-portfolio-gamma.vercel.app/]
 
 ## View live preview [here]().
 
