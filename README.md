@@ -1,4 +1,4 @@
-# Developer Portfolio
+# Mehedi Hasan Munna
 
 ### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
 
@@ -8,7 +8,7 @@
 
 ![](./public/image/screen.png)
 
-## View live preview [here](https://abusaid.netlify.app/).
+## View live preview [here]().
 
 ---
 
@@ -102,20 +102,20 @@ Eg:
 
 ```javascript
 export const personalData = {
-  name: "ABU SAID",
+  name: "MEHEDI HASAN MUNNA",
   profile: "/profile.png",
   designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
+  description: "My name is MEHEDI HASAN MUNNA....",
+  email: "mehedihasan494@gmail.com",
+  phone: "+880 1840733555",
+  address: "Khulna-9000, Bangladesh",
+  github: "https://github.com/mehedi494",
   facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
+  linkedIn: "https://www.linkedin.com/",
+  twitter: "https://twitter.com/",
+  stackOverflow: "https://stackoverflow.com/users/23750478/mehedi-hasan",
+  leetcode: "https://leetcode.com//",
+  devUsername: "example",
   resume: "...",
 };
 ```

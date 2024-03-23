@@ -1,61 +1,31 @@
 // @flow strict
-import { timeConverter } from '@/utils/time-converter';
-import Image from 'next/image';
-import Link from 'next/link';
-import { BsHeartFill } from 'react-icons/bs';
-import { FaCommentAlt } from 'react-icons/fa';
+import Image from "next/image";
+import { VscServerProcess } from "react-icons/vsc";
 
 function BlogCard({ blog }) {
-
   return (
-    <div className="border border-[#1d293a] hover:border-[#464c6a] transition-all duration-500 bg-[#1b203e] rounded-lg relative group"
-    >
-      <div className="h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
-        <Image
-          src={blog?.cover_image}
-          height={1080}
-          width={1920}
-          alt=""
-          className='h-full w-full group-hover:scale-110 transition-all duration-300'
-        />
-      </div>
-      <div className="p-2 sm:p-3 flex flex-col">
-        <div className="flex justify-between items-center text-[#16f2b3] text-sm">
-          <p>{timeConverter(blog.published_at)}</p>
-          <div className="flex items-center gap-3">
-            <p className="flex items-center gap-1">
-              <BsHeartFill />
-              <span>{blog.public_reactions_count}</span>
-            </p>
-            {blog.comments_count > 0 &&
-              <p className="flex items-center gap-1">
-                <FaCommentAlt />
-                <span>{blog.comments_count}</span>
-              </p>
-            }
-          </div>
+    <a href={blog.path}>
+      <div href="" className="border border-[#1d293a] hover:border-[#464c6a] transition-all duration-500 bg-[#1b203e] rounded-lg relative group">
+        <div className="h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
+          <Image
+            src={blog?.imageUrl}
+            height={1080}
+            width={1920}
+            alt=""
+            className="h-full w-full group-hover:scale-110 transition-all duration-300"
+          />
         </div>
-        <Link target='_blank' href={blog.url}>
-          <p className='my-2 lg:my-3 cursor-pointer text-lg text-white sm:text-xl font-medium hover:text-violet-500'>
-            {blog.title}
-          </p>
-        </Link>
-        <p className='mb-2 text-sm text-[#16f2b3]'>
-          {`${blog.reading_time_minutes} Min Read`}
-        </p>
-        <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 lg:pb-6 line-clamp-3'>
-          {blog.description}
-        </p>
-        {/* <div className="">
-          <Link target='_blank' href={blog.url}>
-            <button className='bg-violet-500 text-white px-3 py-1.5 rounded-full text-xs'>
-              Read More
-            </button>
-          </Link>
-        </div> */}
+
+        <div className="p-2 sm:p-3 flex flex-col">
+          <h1 className="p-2 text-gray-300 font-mono">{blog.title}</h1>
+          <button className=" px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex justify-center items-center gap-1 hover:gap-3">
+            <span>Live site</span>
+            <VscServerProcess size={16} />
+          </button>
+        </div>
       </div>
-    </div>
+    </a> 
   );
-};
+}
 
 export default BlogCard;

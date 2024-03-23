@@ -13,7 +13,7 @@ export const skillsData = [
   'AWS',
   'Bootstrap',
   'Docker',
-  'Go',
+  'Php',
   'Figma',
   'Firebase',
   'MaterialUI',
